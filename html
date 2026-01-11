@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Golf Trip Options</title>
+
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 30px;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .option {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 20px;
+        }
+        .option h2 {
+            margin-top: 0;
+            font-size: 18px;
+            border-bottom: 2px solid #2c7be5;
+            padding-bottom: 8px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 7px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        .label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .label i {
+            color: #2c7be5;
+            width: 16px;
+            text-align: center;
+        }
+        .total {
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Golf Trip Options</h1>
+
+    <div class="options">
+
+        <!-- Faro Shared -->
+        <div class="option">
+            <h2>Faro – Shared</h2>
+            <ul>
+                <li><span class="label"><i class="fa-solid fa-plane-arrival"></i>Arrival (20:20)</span><span>€108</span></li>
+                <li><span class="label"><i class="fa-solid fa-plane-departure"></i>Departure (09:20)</span><span>€152</span></li>
+                <li><span class="label"><i class="fa-solid fa-hotel"></i>Accommodation (Sharing)</span><span>€240</span></li>
+                <li><span class="label"><i class="fa-solid fa-bus"></i>Transfer</span><span>€25</span></li>
+                <li><span class="label"><i class="fa-solid fa-golf-ball-tee"></i>Golf</span><span>€513</span></li>
+            </ul>
+            <div class="total">Total: €1,038</div>
+        </div>
+
+        <!-- Faro Single -->
+        <div class="option">
+            <h2>Faro – Single</h2>
+            <ul>
+                <li><span class="label"><i class="fa-solid fa-plane-arrival"></i>Arrival (20:20)</span><span>€108</span></li>
+                <li><span class="label"><i class="fa-solid fa-plane-departure"></i>Departure (09:20)</span><span>€152</span></li>
+                <li><span class="label"><i class="fa-solid fa-hotel"></i>Accommodation (Single)</span><span>€448</span></li>
+                <li><span class="label"><i class="fa-solid fa-bus"></i>Transfer</span><span>€25</span></li>
+                <li><span class="label"><i class="fa-solid fa-golf-ball-tee"></i>Golf</span><span>€513</span></li>
+            </ul>
+            <div class="total">Total: €1,246</div>
+        </div>
+
+        <!-- Murcia -->
+        <div class="option">
+            <h2>Murcia</h2>
+            <ul>
+                <li><span class="label"><i class="fa-solid fa-plane-arrival"></i>Arrival (20:55)</span><span>€120</span></li>
+                <li><span class="label"><i class="fa-solid fa-plane-departure"></i>Departure (11:25)</span><span>€210</span></li>
+                <li><span class="label"><i class="fa-solid fa-hotel"></i>Accommodation</span><span>€30</span></li>
+                <li><span class="label"><i class="fa-solid fa-mug-hot"></i>Breakfast</span><span>€60</span></li>
+                <li><span class="label"><i class="fa-solid fa-car"></i>Car Hire</span><span>€60</span></li>
+                <li><span class="label"><i class="fa-solid fa-golf-ball-tee"></i>Golf</span><span>€280</span></li>
+            </ul>
+            <div class="total">Total: €760</div>
+        </div>
+
+        <!-- Alicante -->
+        <div class="option">
+            <h2>Alicante</h2>
+            <ul>
+                <li><span class="label"><i class="fa-solid fa-plane-arrival"></i>Arrival (21:50)</span><span>€130</span></li>
+                <li><span class="label"><i class="fa-solid fa-plane-departure"></i>Departure (15:30)</span><span>€200</span></li>
+                <li><span class="label"><i class="fa-solid fa-hotel"></i>Accommodation</span><span>€30</span></li>
+                <li><span class="label"><i class="fa-solid fa-mug-hot"></i>Breakfast</span><span>€60</span></li>
+                <li><span class="label"><i class="fa-solid fa-car"></i>Car Hire</span><span>€60</span></li>
+                <li><span class="label"><i class="fa-solid fa-golf-ball-tee"></i>Golf</span><span>€280</span></li>
+            </ul>
+            <div class="total">Total: €760</div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
